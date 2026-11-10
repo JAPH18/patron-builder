@@ -1,0 +1,67 @@
+@startuml builder-modifie
+title Builder : Exemple modifie (pizza Vegetarienne)
+hide circle
+hide empty members
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam nodesep 140
+skinparam ranksep 70
+skinparam class {
+  BackgroundColor #F0A030
+  BorderColor black
+  ArrowColor black
+  FontStyle bold
+}
+
+class Client {
+  +main(String[])
+}
+class DIRECTEUR {
+  +construire()
+}
+class MonteurPizza {
+  +monterPate()
+  +monterWSauce()
+  +monterGarniture()
+  +getPizza()
+}
+class MonteurPizzaReine {
+  +monterPate()
+  +monterWSauce()
+  +monterGarniture()
+}
+class MonteurPizzaPiquante {
+  +monterPate()
+  +monterWSauce()
+  +monterGarniture()
+}
+class MonteurPizzaVegetarienne {
+  +monterPate()
+  +monterWSauce()
+  +monterGarniture()
+}
+class Pizza {
+  +pate: String
+  +sauce: String
+  +garniture: String
+  +setPate(pate:int)
+  +setSauce(sauce:String)
+  +setGarniture(garniture:String)
+}
+
+Client "0..1" -right-> "0..1" DIRECTEUR : +directeur
+DIRECTEUR "1" *-right-> "1..*" MonteurPizza : monteurAbstrait
+
+MonteurPizzaReine -up-|> MonteurPizza
+MonteurPizzaPiquante -up-|> MonteurPizza
+MonteurPizzaVegetarienne -up-|> MonteurPizza
+
+MonteurPizzaReine .down.> Pizza : <<create>>
+MonteurPizzaPiquante .down.> Pizza : <<create>>
+MonteurPizzaVegetarienne .down.> Pizza : <<create>>
+
+' placement
+MonteurPizzaReine -[hidden]right- MonteurPizzaPiquante
+MonteurPizzaPiquante -[hidden]right- MonteurPizzaVegetarienne
+@enduml

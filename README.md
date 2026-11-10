@@ -7,7 +7,6 @@ Devoir n°1 – Patrons de construction (INF461).
 | `exemple.model` | Exemple du cours (p.61-68) : fabrication des pizzas Reine et Piquante |
 | `exemple.model.modifie` | Exemple modifié : ajout d'une 3e pizza **Végétarienne** (`MonteurPizzaVegetarienne`) |
 
-Les diagrammes de classe (PlantUML + PNG) sont dans [`diagrammes/`](diagrammes/).
 
 ## Exécution
 

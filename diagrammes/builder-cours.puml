@@ -8,7 +8,7 @@ skinparam shadowing false
 skinparam nodesep 140
 skinparam ranksep 70
 skinparam class {
-  BackgroundColor #F0A030
+  BackgroundColor #E8C880
   BorderColor black
   ArrowColor black
   FontStyle bold

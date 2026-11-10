@@ -1,4 +1,4 @@
-package builder.modifie;
+package exemple.model.modifie;
 
 public abstract class MonteurPizza {
     protected Pizza pizza=new Pizza() ;

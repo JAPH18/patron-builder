@@ -1,4 +1,4 @@
-package builder.cours;
+package exemple.model.modifie;
 
 public class Client {
 
@@ -14,6 +14,10 @@ public class Client {
     //construire pizza piquante
     System.out.println(".......................Pizza Piquante Fabriquée.................");
     directeur.construirePizzaPiquante().print();
+
+    //construire pizza vegetarienne
+    System.out.println(".......................Pizza Vegetarienne Fabriquée.................");
+    directeur.construirePizzaVegetarienne().print();
 
 
 

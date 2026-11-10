@@ -1,4 +1,4 @@
-package builder.cours;
+package exemple.model.modifie;
 
 public class Pizza {
     private String pate = "";

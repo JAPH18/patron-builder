@@ -1,4 +1,4 @@
-package builder.cours;
+package exemple.model;
 
 public abstract class MonteurPizza {
     protected Pizza pizza=new Pizza() ;

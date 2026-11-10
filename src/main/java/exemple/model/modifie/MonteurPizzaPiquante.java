@@ -1,4 +1,4 @@
-package builder.modifie;
+package exemple.model.modifie;
 
 public class MonteurPizzaPiquante extends MonteurPizza {
 

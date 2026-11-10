@@ -1,4 +1,4 @@
-package builder.cours;
+package exemple.model;
 
 public class MonteurPizzaReine extends MonteurPizza {
 
